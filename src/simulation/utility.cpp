@@ -14,8 +14,8 @@ double Utility::utility(const LRender::ReportAgent &report) const {
 		return -1;
 
 	return
-		0.6 * getFactorNutrition(report) *
-		0.3 * getFactorLight(report) *
+		0.6 * getFactorNutrition(report) +
+		0.3 * getFactorLight(report) +
 		0.1 * getFactorArea(report);
 		//getFactorSeeds(report) *
 		//getFactorRules(report) *
